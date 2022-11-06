@@ -9,12 +9,12 @@ public class First_task {
         System.out.println("Задача 1");
         int amount = 15000;
         int total = 0;
-        int i = 0;
+        int month = 0;
         while (total <= 2_459_000) {
-            total = total + total/100;
-            total= total+amount;
-            i++;
-            System.out.println("Месяц "+ i +", сумма накоплений равна " + total +" рублей.");
+            total += total/100;
+            total += amount;
+            month++;
+            System.out.println("Месяц "+ month +", сумма накоплений равна " + total +" рублей.");
         }
 
         //Задача 2
@@ -22,10 +22,10 @@ public class First_task {
         На следующей строке выведите числа в обратном порядке от 10 до 1, используя оператор for.*/
 
         System.out.println("Задача 2");
-        int x = 0;
-        while (x < 10) {
-            x++;
-            System.out.print(x +" ");
+        int number = 0;
+        while (number < 10) {
+            number++;
+            System.out.print(number +" ");
         }
         System.out.println("");
         for (int q = 10; q>=1; q--){
@@ -43,7 +43,7 @@ public class First_task {
         int fertility = 17;
         int mortality = 8;
         for (int year = 1; year<=10; year++) {
-            population = population + (population * (fertility-mortality))/1000;
+            population += (population * (fertility-mortality))/1000;
             System.out.println("Год "+ year +", численность населения составляет " + population +" человек.");
         }
     }

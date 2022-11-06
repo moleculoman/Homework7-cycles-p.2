@@ -9,12 +9,12 @@ public class Second_task {
             System.out.println("Задача 1");
             int amount = 15000;
             int total = 0;
-            int i = 0;
+            int month = 0;
             while (total <= 12_000_000) {
-                total = total + (total * 7/100);
-                total= total+amount;
-                i++;
-                System.out.println("Месяц "+ i +", сумма накоплений равна " + total +" рублей.");
+                total += (total * 7/100);
+                total += amount;
+                month++;
+                System.out.println("Месяц "+ month +", сумма накоплений равна " + total +" рублей.");
             }
             //Задание 2
             /*
@@ -24,12 +24,12 @@ public class Second_task {
             System.out.println("Задача 2");
             int amount2 = 15000;
             int total2 = 0;
-            int x = 1;
-            for (;total2 <= 12_000_000;x++) {
-                total2 = total2 + (total2 * 7/100);
-                total2= total2+amount2;
-                if (x % 6 ==0 ){
-                    System.out.println("Месяц "+ x +", сумма накоплений равна " + total +" рублей.");
+            int month2 = 1;
+            for (;total2 <= 12_000_000;month2++) {
+                total2 += (total2 * 7/100);
+                total2 += amount2;
+                if (month2 % 6 ==0 ){
+                    System.out.println("Месяц "+ month2 +", сумма накоплений равна " + total2 +" рублей.");
                 }
             }
         //Задание 3
@@ -40,12 +40,12 @@ public class Second_task {
         System.out.println("Задача 3");
         int amount3 = 15000;
         int total3 = 0;
-        int z = 1;
-        for (;z <= 108; z++) {
-            total3 = total3 + (total3 * 7/100);
-            total3= total3+amount3;
-            if (z % 6 ==0 ){
-                System.out.println("Месяц "+ z +", сумма накоплений равна " + total3 +" рублей.");
+        int month3 = 1;
+        for (;month3 <= 108; month3++) {
+            total3 += (total3 * 7/100);
+            total3 += amount3;
+            if (month3 % 6 ==0 ){
+                System.out.println("Месяц "+ month3 +", сумма накоплений равна " + total3 +" рублей.");
             }
         }
         /*Задание 4
@@ -61,9 +61,9 @@ public class Second_task {
         System.out.println("Задача 4");
         int firstFridayOfTheMonth = 6;
         int daysInTheWeek = 7;
-        for (i = 1; i <=31; i++){
-            if (i % daysInTheWeek == firstFridayOfTheMonth ) {
-                System.out.println("Сегодня пятница, "+ i + "-е число. Необходимо подготовить отчет.");
+        for (int dayInTheMonth = 1; dayInTheMonth <=31; dayInTheMonth++){
+            if (dayInTheMonth % daysInTheWeek == firstFridayOfTheMonth ) {
+                System.out.println("Сегодня пятница, "+ dayInTheMonth + "-е число. Необходимо подготовить отчет.");
             }
         }
         }

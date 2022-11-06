@@ -18,10 +18,10 @@ public class Third_task {
         //Задание 2
         //Таблица умножения на 2
         System.out.println("Задача 2. Таблица умножения на 2");
-        int i =2;
-        for (int x = 1; x <=10; x++){
+        int multiplicationNumber =2;
+        for (int period = 1; period <=10; period++){
             {
-                System.out.println(i + "*" + x + "=" + (i*x));
+                System.out.println(multiplicationNumber + "*" + period + "=" + (multiplicationNumber*period));
             }
         }
     }
